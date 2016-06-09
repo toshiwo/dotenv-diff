@@ -2,14 +2,14 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dotenv/diff`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
 gem 'dotenv-diff'
+# of
+gem 'dotenv-diff', groups => [:development]
 ```
 
 And then execute:
@@ -22,7 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Dotenv::Diff.diff
+# or
+Dotenv::Diff.diff('.env.example')
+```
 
 ## Development
 
